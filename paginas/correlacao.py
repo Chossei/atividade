@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import re
 import base64
+import tabulate
 
 
 def ajustar_caminho_imagem(texto_markdown):

@@ -31,14 +31,15 @@ custo = [65, 120, 210, 260, 380, 450, 510, 555, 615, 660]
 
 base1 = pd.DataFrame({'Tamanho': tamanho, 'Custo': custo})
 grafico = sns.scatterplot(data = base1, x = 'Tamanho', y = 'Custo')
-plt.savefig('grafico1.png', dpi=300, bbox_inches='tight')
+grafico1_path = 'grafico1.png'
+plt.savefig(grafico1_path, dpi=300, bbox_inches='tight')
 plt.close()
 
 correlacao1 = base1.corr()
 
 texto1 = f'''## Diagrama de dispersão: tamanho x custo
 
-![]('grafico1.png')
+![]("grafico1.png")
 
 {correlacao1.to_markdown()
 
@@ -62,13 +63,14 @@ tempo = [5, 10, 6, 11, 5, 14, 30, 11, 17, 3, 9,
 base2 = pd.DataFrame({'brancas': brancas,
                       'tempo': tempo})
 grafico2 = sns.scatterplot(data = base2, y = 'tempo', x = 'brancas')
-plt.savefig('grafico2.png', dpi = 300, bbox_inches = 'tight')
+grafico2_path = 'grafico2.png'
+plt.savefig(grafico2_path, dpi = 300, bbox_inches = 'tight')
 plt.close()
 correlacao2 = base2.corr()
 
 texto2 = f'''## Diagrama de dispersão: Células Brancas x Tempo de Internação
 
-![]('grafico2.png')
+![]({grafico2_path})
 
 {correlacao2.to_markdown()}
 

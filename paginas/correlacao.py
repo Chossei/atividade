@@ -2,6 +2,8 @@ import streamlit as st
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
+import re
+import base64
 
 
 def ajustar_caminho_imagem(texto_markdown):
@@ -27,7 +29,7 @@ tamanho = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 custo = [65, 120, 210, 260, 380, 450, 510, 555, 615, 660]
 
 base1 = pd.DataFrame({'Tamanho': tamanho, 'Custo': custo})
-grafico = sns.scatterplot(data = base1, x = 'Tamanho', y = 'Custo)
+grafico = sns.scatterplot(data = base1, x = 'Tamanho', y = 'Custo')
 plt.savefig('grafico1.png', dpi=300, bbox_inches='tight')
 plt.close()
 
@@ -35,14 +37,14 @@ correlacao1 = base1.corr()
 
 texto1 = f'''## Diagrama de dispersão: tamanho x custo
 
-![]('grafico1.png')
+![]("grafico1.png")
 
 {correlacao1.to_markdown()}
 
 Os dados estão positivamente correlacionados. Com um coeficiente de correlação linear de,
 aproximadamente, 0.994, analisa-se que o tamanho está associado ao custo. Quanto maior o tamanho, maior será o custo.'''
 
-texto1_final = ajustar_caminho_imagem(texto1_final)
+texto1_final = ajustar_caminho_imagem(texto1)
 
 st.markdown(texto1_final)
 
@@ -63,7 +65,7 @@ correlacao2 = base2.corr()
 
 texto2 = f'''## Diagrama de dispersão: Células Brancas x Tempo de Internação
 
-![]('grafico2.png')
+![]("grafico2.png")
 
 {correlacao2.to_markdown()}
 

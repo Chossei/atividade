@@ -39,7 +39,7 @@ correlacao1 = base1.corr()
 
 texto1 = f'''## Diagrama de dispersão: tamanho x custo
 
-![]("grafico1.png")
+![]({grafico1_path})
 
 {correlacao1.to_markdown()
 

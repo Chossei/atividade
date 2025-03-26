@@ -38,9 +38,11 @@ correlacao1 = base1.corr()
 
 texto1 = f'''## Diagrama de dispersão: tamanho x custo
 
-![]("grafico1.png")
+![]('grafico1.png')
 
-{correlacao1.to_markdown()}
+{correlacao1.to_markdown()
+
+---}
 
 Os dados estão positivamente correlacionados. Com um coeficiente de correlação linear de,
 aproximadamente, 0.994, analisa-se que o tamanho está associado ao custo. Quanto maior o tamanho, maior será o custo.'''
@@ -66,7 +68,7 @@ correlacao2 = base2.corr()
 
 texto2 = f'''## Diagrama de dispersão: Células Brancas x Tempo de Internação
 
-![]("grafico2.png")
+![]('grafico2.png')
 
 {correlacao2.to_markdown()}
 

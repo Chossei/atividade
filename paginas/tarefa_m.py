@@ -12,17 +12,17 @@ Este documento apresenta, de forma organizada, duas tarefas:
 ## 🔍 Tarefa 1: Pesquisas Executadas pelo IBGE
 
 O Instituto Brasileiro de Geografia e Estatística (IBGE) realiza uma ampla gama de pesquisas para subsidiar o planejamento público e privado no Brasil. Essas pesquisas podem ser divididas em dois grandes grupos:
-
-### 🏠 Pesquisas do Tipo *Censo*
 ---
+### 🏠 Pesquisas do Tipo *Censo*
+
 - **📌 Censo Demográfico**  
   Realizado a cada 10 anos, coleta informações sobre população, domicílios, características demográficas, socioeconômicas, educacionais e de trabalho no Brasil.  
 
 - **🌾 Censo Agropecuário**  
   Levanta dados sobre produção agropecuária, abrangendo estabelecimentos rurais, florestais e aquícolas, contribuindo para políticas voltadas ao setor.
-
-### 📊 Pesquisas do Tipo *Amostra*
 ---
+### 📊 Pesquisas do Tipo *Amostra*
+
 - **📈 Pesquisa Nacional por Amostra de Domicílios (PNAD)**  
   Analisa características socioeconômicas da população, como educação, trabalho, renda e habitação, possibilitando estudos de tendências ao longo do tempo.  
 
